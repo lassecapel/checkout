@@ -7,7 +7,8 @@
 
 export type Action =
     { type: 'SET_MESSAGE', message: string, }
-  | {type: 'TOGGLE', }
+  | { type: 'SELECT_GIFTWRAP', id: number, }
+  | { type: 'TOGGLE', }
   ;
 
 

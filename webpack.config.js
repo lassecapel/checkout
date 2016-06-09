@@ -15,10 +15,7 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new CarteBlanche({
-      componentRoot: './src/components'
-    })
+    new webpack.HotModuleReplacementPlugin()
   ],
   module: {
     loaders: [{

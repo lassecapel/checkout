@@ -9,7 +9,8 @@ import {applyMiddleware, createStore} from 'redux';
 import reducers from '../reducers';
 import createLogger from 'redux-logger';
 
-const isDebuggingInChrome = !!window.navigator.userAgent;
+const isDebuggingInChrome: boolean = !!window.navigator.userAgent;
+
 const logger = createLogger({
   predicate: (getState, action) => isDebuggingInChrome,
   collapsed: true,
